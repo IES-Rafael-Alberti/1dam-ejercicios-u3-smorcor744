@@ -2,19 +2,21 @@
 
 
 def pedir_palabra() -> list:
-    palabra = input("Introduce una palabra: ")
-    return tuple(palabra)
+    palabra = tuple(input("Introduce una palabra: "))
+    return palabra
 
 
 def cont_vocales(palabra: tuple) -> tuple:
-    vocales = tuple(["a",0],["e",0],["i",0],["o",0],["u",0])
+    vocales = (["a",0],["e",0],["i",0],["o",0],["u",0])
     for vocal in vocales:
         vocal[1] = palabra.count(vocal[0])
+    return vocales
 
 
 def main():
     palabra = pedir_palabra()
-    
+    vocales = cont_vocales(palabra)
+    print(vocales)
 
 
 if __name__ == "__main__":
