@@ -4,7 +4,7 @@ def pedir_fruta(frutas: dict):
     fruta = input("Dime una fruta: ")
     if fruta in frutas:
         peso = float(input("Dime el número de kilos de esa fruta: "))
-        for fruta in frutas:
+        if fruta in frutas:
             coste = frutas[fruta] * peso
         return print(f"{coste}€")
     else:
