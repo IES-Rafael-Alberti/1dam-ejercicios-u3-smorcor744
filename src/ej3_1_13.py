@@ -13,14 +13,18 @@ def media(num:list):
     return suma / len(num)
 
 def desviacion_tipica(numeros):
-    
-    return 
+    # Sumatorio de cada elemento menos la media
+    sumatorio = 0.0
+    for numero in numeros:
+        sumatorio += (numero - media(numeros)) ** 2
+    desviacion = (sumatorio / len(numeros)) ** 0.5
+    return desviacion
 
 
 def main():
     numeros = pedir_lista()
     print("La media es: ", media(numeros))
-    #print("La desviación típica es: ", desviacion_tipica(numeros))
+    print("La desviación típica es: ", desviacion_tipica(numeros))
 
 if __name__ == "__main__":
     main()
