@@ -2,11 +2,13 @@
 
 def fecha():
     fech = input("Dime la fecha de hoy (dd/mm/aaaa): ")
-    fech.split("/")
+    fech = fech.split("/")
+    return {"dia":fech[0],"mes":fech[1],"año":fech[2]}
 
 
 def main():
-    
+    dic = fecha()
+    print(f"{dic["dia"]} de {dic["mes"]} de {dic["año"]}")
 
 
 if __name__ == "__main__":
