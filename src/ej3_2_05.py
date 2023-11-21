@@ -10,7 +10,7 @@ def creditos_totales(asignaturas:dict):
     suma = 0
     clave = asignaturas.keys()
     for clave in asignaturas:
-        suma = suma + asignaturas[clave]
+        suma += asignaturas[clave]
     return suma
 
 def main():

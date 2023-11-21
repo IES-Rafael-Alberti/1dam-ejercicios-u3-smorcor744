@@ -9,7 +9,7 @@ def compra(lista: dict):
         else:
             precio = float(input("Dime su precio:"))
             lista[articulo] = precio
-    return lista
+
 
 def main():
     lista = {}

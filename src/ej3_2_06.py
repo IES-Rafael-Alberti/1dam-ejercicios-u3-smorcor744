@@ -15,6 +15,14 @@ def info(datos: dict):
     print(datos)
 
 
+"""def pedir_datos(datos: dict) -> bool:
+    continuar = True
+    while continuar == True:
+        clave = input()
+        valor = input()
+        datos[clave] = valors
+"""
+
 def main():
     datos = {}
     info(datos)

@@ -3,12 +3,17 @@
 def pedir_fruta(frutas: dict):
     fruta = input("Dime una fruta: ")
     if fruta in frutas:
-        peso = float(input("Dime el número de kilos de esa fruta: "))
+        try:
+            peso = float(input("Dime el número de kilos de esa fruta: "))
+        except ValueError:
+            print("**error**")
+        except Exception:
+            print("**error**")
         if fruta in frutas:
             coste = frutas[fruta] * peso
-        return print(f"{coste}€")
+        print(f"{coste}€")
     else:
-        return print("No tenemos esa fruta")
+        print("No tenemos esa fruta")
 
 
 def main():

@@ -11,10 +11,6 @@ def tipo_moneda(monedas: dict):
         return print("La divisa no está en el diccionario")
 
 
-
-
-
-
 def main():
     monedas = {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
     tipo_moneda(monedas)
